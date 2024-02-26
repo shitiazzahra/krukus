@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krukus</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/logo-K.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../public/output.css">
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="border-b-2 border-black py-8 lg:pt-6 lg:pb-5">
+        <div class="container mx-auto lg:relative flex flex-col lg:flex-row
+        lg:justify-between gap-y-3 lg:gap-y-0">
+            <!-- logo -->
+            <div class="flex justify-center lg:justify-normal">
+                <a href="index.html">
+                    <img src="../assets/img/header/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-y-3 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+
+                <!-- nav mobile -->
+                <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] lg:hidden">
+                    <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full
+                    top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg">
+                        <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+                    </div>
+
+                    <!-- logo, list, form -->
+                    <div class="px-12 flex flex-col gap-y-12 h-full">
+                        <!-- logo -->
+                        <a href="index.html">
+                            <img src="../assets/img/header/logo.svg" alt="">
+                        </a>
+                        <!-- list -->
+                        <ul class="flex flex-col gap-y-5">
+                            <li>
+                                <a href="#" class="text-accent hover:text-accent
+                                transition-all duration-300">WOMEN</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-accent hover:text-accent
+                                transition-all duration-300">MEN</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-accent hover:text-accent
+                                transition-all duration-300">KIDS</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-accent hover:text-accent
+                                transition-all duration-300">JIBBITZ CHARMS</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-accent hover:text-accent
+                                transition-all duration-300">SALE</a>
+                            </li>
+                        </ul>
+                        <!-- form -->
+                        <form class="relative flex gap-x-[10px]">
+                            <label><i class="ri-search-line text-2xl text-accent"></i></label>
+                                <input type="text" id="nav-search-input"
+                                placeholder="Search for..." class="outline-none w-[160px] border-2 p-1
+                                focus:border-accent italic">
+                        </form>
+                    </div>
+                </nav>
+                <!-- desktop nav -->
+                <nav
+                class=" bg-white w-full left-0 -bottom-[86px]
+                h-10 hidden lg:flex lg:items-center lg:justify-between lg:px-[5px]">
+                    <!-- list -->
+                    <ul class="flex gap-x-4">
+                        <li>
+                            <a href="#" class="pr-5 font-bold text-[17.5px] text-accent hover:text-accent
+                            transition-all duration-300">WOMEN</a>
+                        </li>
+                        <li>
+                            <a href="#" class="pr-5 font-bold text-[17.5px] text-accent hover:text-accent
+                            transition-all duration-300">MEN</a>
+                        </li>
+                        <li>
+                            <a href="#" class="pr-5 font-bold text-[17.5px] text-accent hover:text-accent
+                            transition-all duration-300">KIDS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="pr-5 font-bold text-[17.5px] text-accent hover:text-accent
+                            transition-all duration-300">JIBBITZ CHARMS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="pr-5 font-bold text-[17.5px] text-accent hover:text-a
+                            transition-all duration-300">SALE</a>
+                        </li>
+                        <li>
+                            <a href="#" class="pr-5 font-bold text-[17.5px] text-accent hover:text-a
+                            transition-all duration-300">SPECIAL COLLECTION</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- form -->
+                    <form class=" flex lg:inline-block gap-y-[10px]">
+                        <div class="flex border-2 p-1 border-accent">
+                            <input type="text" id="search-input" placeholder="Search for keyword"
+                        class="outline-none placeholder:text-base">
+                        <label for="search-input">
+                            <i class="ri-search-line text-2xl text-accent"></i>
+                        </label>
+                        </div>
+                        
+                    </form>
+                    <div class="text-[35px] text-accent ml-5 items-center justify-center">
+                        <i class="ri-heart-line"></i>
+                    </div>
+
+                    <div class="text-[35px] text-accent ml-5 items-center justify-center">
+                        <a href="login.html"><i class="ri-store-2-line"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- detail kitty -->
+    <section class="team section flex justify-center">
+        <div class="container grid xl:grid-cols-4 gap-2 px-3 xl:px-0 -mt-10">
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp1.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus X Hello Kitty IAM Classic Clog Kids Unisex - White</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 1,099,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp2.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus X Hello Kitty IAM Classic Clog Unisex - White</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 1,449,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp3.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus X Hello Kitty Siren Clog Unisex - White</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 2,499,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp4.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus X Hello Kitty Stomp Slide Unisex - White</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 1,899,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp5.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus Jibbitz Hello Kitty 5 Pack</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 459,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp6.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus Jibbitz Hello Kitty Glitter Cat</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 199,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp7.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus Hello Kitty Wink Jibbitz</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 129,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp8.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus Hello Kitty Logo Head Jibbitz</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 129,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp9.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus Hello Kitty 3D Jibbitz</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 129,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp10.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus Hello Kitty 5 Pack Jibbitz</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 459,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp11.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus Hello Kitty Waving Jibbitz</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 129,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp12.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus Hello Kitty Sitting Jibbitz</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 129,000</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="bg-white w-[240px]">
+                    <a href="#">
+                        <img src="/assets/img/kp13.png" alt=""/>
+                    </a>
+                    <div class="p-2">
+                        <a href=""><i class="ri-heart-3-fill text-[30px] hover:text-red-600 flex justify-end"></i></a>
+                        <div class="border-b mb-5"></div>
+                        <a href="#">
+                            <h5 class="text-[17px] font-semibold tracking-tight text-[#2F2F2F] hover:text-accent hover:underline mb-5">Krukus Hello Kitty Head Jibbitz</h5>
+                        </a>
+                        <p class="text-accent font-bold">RP 129,000</p>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+    <!-- end detail kitty -->
+    
+    <!-- SCRIPT -->
+    <!-- Swiper -->
+    <script src="../src/swiper-bundle.min.js"></script>
+    <!-- main -->
+    <script src="main.js"></script>
+    <!-- swiper js -->
+    <script src="../src/scrollreveal.min.js"></script>
+</body>
+</html>
